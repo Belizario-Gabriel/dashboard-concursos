@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* O Fundo Principal super escuro que você definiu */
+body {
+  font-family: sans-serif;
+  background-color: #020113; 
+  color: #ffffff; /* Texto branco para dar contraste */
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar com a cor dos cards */
+.sidebar {
+  width: 260px;
+  background-color: #13124a;
+  padding: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.05); /* Um detalhe sutil */
+}
+
+.sidebar .logo {
+  margin-bottom: 30px;
+  color: #059669; /* Verde esmeralda no Logo */
+}
+
+/* Estilizando a lista do menu */
+.sidebar ul {
+  list-style: none; /* Tira as bolinhas da lista */
+}
+
+.sidebar li {
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.sidebar li:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* Efeito hover padrão */
+}
+
+/* O SEU MENU ATIVO - Esmeralda com transparência */
+.sidebar li.active {
+  background-color: rgba(5, 150, 105, 0.15); /* Transparência reduzida do esmeralda */
+  color: #059669;
+  border-left: 4px solid #059669; /* Detalhe lateral de UX */
+}
+
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dashboard-content {
+  padding: 30px;
+}
+
+/* O SEU CARD SECUNDÁRIO - Gradiente Esmeralda */
+.welcome-card {
+  background: linear-gradient(135deg, #059669, #047857);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.2);
+}
+
+.welcome-card p {
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+/* linha horizontal que separa as abas do nome do usuário e do concurso */
+
+#linha-horizontal {
+    border: solid;
+    color: #05966870;
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    margin: 15px;
+}
