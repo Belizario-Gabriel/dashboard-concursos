@@ -1,28 +1,24 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Sidebar from './components/sidebar.jsx';'./components/sidebar.jsx'
 import Dash from './pages/dashboard.jsx';
+import Simulados from './pages/simulados.jsx';
+import Disciplinas from './pages/disciplinas.jsx';
+import Configuracoes from './pages/configuracoes.jsx';
 
 function App() {
   return (
-    <div className="app-container">
-      
-      {/* Barra Lateral Escura */}
-      <aside className="sidebar">
-        <div id='concourseName'><h2 className='logo'>ConcursoDash</h2></div>
-        <div id='userName'>Gabriel</div>
-        <div id='linha-horizontal'></div>
-        <nav>
-          <ul>
-            <li className='active'>Dashboard</li>
-            <li>Meus Simulados</li>
-            <li>Disciplinas</li>
-            <li>Configurações</li>
-          </ul>
-        </nav>
-      </aside>
-
-      <Dash />
-
-    </div>
+    <Router>
+      <div className="app-container">
+        <Sidebar />
+        <Routes>
+          <Route path="/dashboard" element={<Dash />} />
+          <Route path="/simulados" element={<Simulados />} />
+          <Route path="/disciplinas" element={<Disciplinas />} />
+          <Route path="/configuracoes" element={<Configuracoes />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
