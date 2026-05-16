@@ -1,0 +1,68 @@
+.main-simulado{
+    margin: 30px;
+}
+header{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.card-container{
+background-color: #28284657; /* Sua cor definida */
+  padding: 0px;
+  margin: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  overflow-x: auto;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+.buscador{
+    padding: 25px;
+    position: relative;
+    height: 90px; /* Garante que a linha não colapse (fique achatada) */
+}
+.buscador-wrapper {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza perfeitamente na vertical */
+}
+th, td {
+    text-align: left;
+    padding: 17px;
+    border-bottom: 1px solid #4c615752;
+    color: #94a3b8;
+    font-family: sans-serif;
+}
+#buscador{
+    border-radius: 12;
+    background-color: black;
+}
+.title {
+    font-size: 20px;
+}
+header{
+    justify-content: space-between;
+    display: flex;
+}
+
+.badge-media {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+.media-boa {
+    background-color: rgba(5, 150, 105, 0.2); /* Fundo verde translúcido */
+    color: #10b981; /* Texto esmeralda claro */
+    border: 1px solid #059669;
+}
+.media-ruim {
+    background-color: rgba(220, 38, 38, 0.2); /* Fundo vermelho translúcido */
+    color: #ef4444; /* Texto vermelho claro */
+    border: 1px solid #dc2626;
+}

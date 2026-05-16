@@ -159,12 +159,12 @@ function Dash() {
     {/* Adicione logo abaixo do seu card de Atenção ou em uma nova linha */}
 <section className="recent-activities">
   <div className="card-header">
-    <h3>🕒 Atividades Recentes</h3>
+    <h3>Atividades Recentes</h3>
   </div>
 
   <div className="activities-list">
     
-    {/* Exemplo 1: Simulado normal */}
+    
     <div className="activity-item">
       <div className="activity-icon">📝</div>
       <div className="activity-info">
@@ -174,7 +174,6 @@ function Dash() {
       </div>
     </div>
 
-    {/* Exemplo 2: Ouro! 100% em uma disciplina */}
     <div className="activity-item highlight">
       <div className="activity-icon">🏆</div>
       <div className="activity-info">
