@@ -66,3 +66,9 @@ header{
     color: #ef4444; /* Texto vermelho claro */
     border: 1px solid #dc2626;
 }
+
+.media-media{
+    background-color: rgba(99, 150, 5, 0.2); /* Fundo verde translúcido */
+    color: #9ab910; /* Texto esmeralda claro */
+    border: 1px solid #639605;
+}
