@@ -36,23 +36,28 @@ body {
 /* Estilizando a lista do menu */
 .sidebar ul {
   list-style: none; /* Tira as bolinhas da lista */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.sidebar li {
+.sidebar-link {
+  display: block;
   padding: 12px 15px;
-  margin-bottom: 8px;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.sidebar li:hover {
+.sidebar-link:hover {
   background-color: rgba(255, 255, 255, 0.05); /* Efeito hover padrão */
 }
 
 /* O SEU MENU ATIVO - Esmeralda com transparência */
-.sidebar li.active {
+.sidebar-link.active {
   background-color: rgba(5, 150, 105, 0.15); /* Transparência reduzida do esmeralda */
   color: #059669;
   border-left: 4px solid #059669; /* Detalhe lateral de UX */
@@ -62,6 +67,13 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
 .topbar {
