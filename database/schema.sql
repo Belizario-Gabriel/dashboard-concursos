@@ -2,6 +2,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE tabela_simulado (
 simulado_id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
 simulado_nome VARCHAR(100) NOT NULL,
 data TIMESTAMP DEFAULT NOW ());
 
